@@ -2,14 +2,14 @@
 <section>
   <div class="inputs">
     <form (submit)="onSubmit(formData)" #formData="ngForm">
-      <textarea 
+      <textarea
       [(ngModel)]="newQuote.body"
       required
       name="body"
       minlength="3"
       #body="ngModel"
       cols="30" rows="2"></textarea>
-        <input 
+      Author:  <input
       [(ngModel)]="newQuote.author"
       required
       name="author"
